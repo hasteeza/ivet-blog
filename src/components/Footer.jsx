@@ -37,7 +37,7 @@ const Footer = () => {
         }}
       ></div>
 
-      <div className=" sm:px-6 lg:px-8 relative z-10">
+      <div className=" max-sm:px-6 max-lg:px-8 px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-12">
           {/* About Column */}
           <div data-aos="fade-up">

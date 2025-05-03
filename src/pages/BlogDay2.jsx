@@ -135,8 +135,6 @@ const BlogDay2 = () => {
           1.5 meters, making them among the largest bats in the world.
         </p>
 
-        <ImageGallery images={afternoonImages} />
-
         <p>
           As we walked through the forest trails, we could see countless bats
           hanging from the trees above us. Our guide explained the crucial
