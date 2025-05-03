@@ -103,11 +103,18 @@ const Footer = () => {
                 Urban Infrastructure
               </Link>
               <Link
-                to="/day6-7"
+                to="/day6"
                 className="text-gray-400 hover:text-white transition-colors flex items-center group col-span-1 sm:col-span-2"
               >
                 <ChevronRight className="h-3 w-3 mr-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 Baguio: The Summer Capital
+              </Link>
+              <Link
+                to="/day7"
+                className="text-gray-400 hover:text-white transition-colors flex items-center group col-span-1 sm:col-span-2"
+              >
+                <ChevronRight className="h-3 w-3 mr-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                Baguio: Last Hours of the Day
               </Link>
             </div>
           </div>

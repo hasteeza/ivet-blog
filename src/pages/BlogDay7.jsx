@@ -4,7 +4,7 @@ import BlogSection from "../components/BlogSection";
 import ImageGallery from "../components/ImageGallery";
 import CircularGallery from "../components/CircularGallery";
 
-const BlogDay6_7 = () => {
+const BlogDay7 = () => {
   const day6Images = [
     {
       src: "images/day-6-7/strawberryfarm.jpg",
@@ -29,27 +29,27 @@ const BlogDay6_7 = () => {
   // Circular gallery images - colored versions
   const circularImages = [
     {
-      src: "images/day-6-7/b1.jpg",
+      src: "images/day-6-7/z1.jpg",
       alt: "",
     },
     {
-      src: "images/day-6-7/b2.jpg",
+      src: "images/day-6-7/z2.jpg",
       alt: "",
     },
     {
-      src: "images/day-6-7/b3.jpg",
+      src: "images/day-6-7/z3.jpg",
       alt: "",
     },
     {
-      src: "images/day-6-7/b4.jpg",
+      src: "images/day-6-7/z4.jpg",
       alt: "",
     },
     {
-      src: "images/day-6-7/b5.jpg",
+      src: "images/day-6-7/z5.jpg",
       alt: "",
     },
     {
-      src: "images/day-6-7/b6.jpg",
+      src: "images/day-6-7/z6.jpg",
       alt: "",
     },
     {
@@ -109,56 +109,13 @@ const BlogDay6_7 = () => {
   return (
     <div>
       <BlogHeader
-        day="6 & 7"
-        title="Baguio: The Summer Capital"
-        subtitle="Exploring the cool highlands of Northern Luzon"
+        day="7"
+        title="Baguio: Last Hours of the Day"
+        subtitle="Enjoyed a bike ride in Burnham Park and shopped for pasalubong."
         image="/placeholder.svg?height=800&width=1200"
       />
 
-      <BlogSection title="Day 6: Journey to Baguio">
-        <p>
-          Our final two days took us to Baguio City, known as the Summer Capital
-          of the Philippines due to its cool climate. Located approximately 250
-          kilometers north of Manila at an elevation of about 1,500 meters above
-          sea level, Baguio offers a welcome respite from the tropical heat of
-          the lowlands.
-        </p>
-
-        <p>
-          The journey to Baguio was an adventure in itself, taking us through
-          the provinces of Central Luzon and up the winding roads of the
-          Cordillera mountain range. As we ascended, we noticed the gradual
-          change in vegetation and temperature, with pine trees becoming more
-          prevalent and the air growing noticeably cooler.
-        </p>
-
-        <ImageGallery images={day6Images} />
-
-        <p>
-          We arrived in Baguio at around 5 AM and made our way to the Strawberry
-          Farm in La Trinidad. Unfortunately, it wasn't open for strawberry
-          picking yet, as it only starts at 8 AM. To make the most of our time,
-          we decided to visit the nearby Bell Church, known for its beautiful
-          Chinese-inspired architecture and serene atmosphere.
-        </p>
-
-        <p>
-          After checking into our hotel, we continued our Baguio adventure with
-          a visit to the Philippine Military Academy, where we explored the
-          campus and learned about the country’s military history. We then
-          headed to The Mansion, the official summer residence of the President,
-          and enjoyed the scenic views at Mines View Park.
-        </p>
-
-        <p>
-          We ended our day at the lively Night Market along Harrison Road,
-          browsing through bargain clothes, local crafts, and delicious street
-          food. The cool evening breeze and energetic vibe made for a perfect
-          close to our first day in Baguio.
-        </p>
-      </BlogSection>
-
-      <BlogSection title="Day 7: Baguio Highlights" isAlt={true}>
+      <BlogSection title="Morning: Last Day in Baguio">
         <p>
           On our final day, we began with a relaxing visit to Burnham Park, one
           of Baguio’s most iconic landmarks. We enjoyed a leisurely bike ride
@@ -196,6 +153,29 @@ const BlogDay6_7 = () => {
         </p>
       </BlogSection>
 
+      <BlogSection title="Afternoon: Leaving Baguio" isAlt={true}>
+        <p>
+          As we left Baguio in the afternoon, a sense of longing filled the air.
+          Our time in the City of Pines felt bitin—too short for everything we
+          wanted to experience. The cool breeze, the scenic views, the local
+          food, and the warm culture made us wish we had just a little more time
+          to explore. It felt like the days flew by so quickly, and before we
+          knew it, it was already time to say goodbye. We promised ourselves
+          that we’d come back someday—to revisit our favorite spots and discover
+          even more hidden gems that Baguio has to offer.
+        </p>
+
+        <p>
+          With hearts full of memories and bags filled with pasalubong, we
+          boarded the bus back to Quezon City. The long hours of travel gave us
+          time to reflect on our week-long adventure—from the peaceful mornings
+          at Burnham Park to the vibrant nights at the Baguio Night Market.
+          Though the road ahead was long, the stories and laughter we shared
+          during the trip made the journey home just as meaningful. It was more
+          than just a tour—it was an experience we’ll always cherish.
+        </p>
+      </BlogSection>
+
       {/* Circular Gallery */}
       <h1 className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-white font-bold text-3xl pt-12">
         Random Shots
@@ -212,4 +192,4 @@ const BlogDay6_7 = () => {
   );
 };
 
-export default BlogDay6_7;
+export default BlogDay7;

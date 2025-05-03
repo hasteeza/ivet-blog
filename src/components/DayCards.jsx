@@ -84,19 +84,27 @@ const DayCards = () => {
       ],
     },
     {
-      id: "6-7",
+      id: "6",
       title: "Baguio: The Summer Capital",
       description: "Exploring the cool highlands of Northern Luzon",
       image: "images/baguio-group.jpg",
-      link: "/day6-7",
+      link: "/day6",
       locations: [
-        "Burnham Park",
         "Bell Church",
         "Mines View Park",
         "Strawberry Farm",
         "Philippine Military Academy",
         "The Mansion",
       ],
+    },
+    {
+      id: "7",
+      title: "Baguio: Last Hours of the Day",
+      description:
+        "Enjoyed a bike ride in Burnham Park and shopped for pasalubong.",
+      image: "images/day-6-7/burnham3.jpg",
+      link: "/day7",
+      locations: ["Burnham Park"],
     },
   ];
 
