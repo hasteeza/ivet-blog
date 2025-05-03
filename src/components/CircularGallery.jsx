@@ -155,7 +155,11 @@ class Media {
     this.onResize();
   }
   createShader() {
-    const texture = new Texture(this.gl, { generateMipmaps: false });
+    const texture = new Texture(this.gl, {
+      generateMipmaps: true,
+      minFilter: this.gl.LINEAR_MIPMAP_LINEAR,
+      magFilter: this.gl.LINEAR,
+    });
     this.program = new Program(this.gl, {
       depthTest: false,
       depthWrite: false,
@@ -171,7 +175,7 @@ class Media {
         void main() {
           vUv = uv;
           vec3 p = position;
-          p.z = (sin(p.x * 4.0 + uTime) * 1.5 + cos(p.y * 2.0 + uTime) * 1.5) * (0.1 + uSpeed * 0.5);
+          // Removed the waving effect
           gl_Position = projectionMatrix * modelViewMatrix * vec4(p, 1.0);
         }
       `,
@@ -222,8 +226,11 @@ class Media {
     const img = new Image();
     img.crossOrigin = "anonymous";
     img.src = this.image;
+    img.decoding = "async";
+    img.loading = "eager";
     img.onload = () => {
       texture.image = img;
+      texture.needsUpdate = true;
       this.program.uniforms.uImageSizes.value = [
         img.naturalWidth,
         img.naturalHeight,
@@ -272,7 +279,8 @@ class Media {
     }
 
     this.speed = scroll.current - scroll.last;
-    this.program.uniforms.uTime.value += 0.04;
+    // Remove or comment out this line:
+    // this.program.uniforms.uTime.value += 0.04;
     this.program.uniforms.uSpeed.value = this.speed;
 
     const planeOffset = this.plane.scale.x / 2;

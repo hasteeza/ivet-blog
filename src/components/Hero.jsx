@@ -74,7 +74,7 @@ const Hero = () => {
           {[...Array(6)].map((_, i) => (
             <p
               key={i}
-              className="rotate-90 text-[15rem] font-black font-sans text-[rgba(1,1,1,)] uppercase whitespace-nowrap text-outline"
+              className="rotate-90 text-[15rem] font-black font-sans text-[rgba(1,1,1,)] uppercase whitespace-nowrap text-outline max-sm:text-9xl"
             >
               EDUCATIONAL TOUR
             </p>
