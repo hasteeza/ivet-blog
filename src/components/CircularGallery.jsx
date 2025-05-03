@@ -156,8 +156,8 @@ class Media {
   }
   createShader() {
     const texture = new Texture(this.gl, {
-      generateMipmaps: true,
-      minFilter: this.gl.LINEAR_MIPMAP_LINEAR,
+      generateMipmaps: false,
+      minFilter: this.gl.LINEAR,
       magFilter: this.gl.LINEAR,
     });
     this.program = new Program(this.gl, {

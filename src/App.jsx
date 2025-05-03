@@ -12,7 +12,8 @@ import BlogDay2 from "./pages/BlogDay2";
 import BlogDay3 from "./pages/BlogDay3";
 import BlogDay4 from "./pages/BlogDay4";
 import BlogDay5 from "./pages/BlogDay5";
-import BlogDay6_7 from "./pages/BlogDay6_7";
+import BlogDay6 from "./pages/BlogDay6";
+import BlogDay7 from "./pages/BlogDay7";
 import Footer from "./components/Footer";
 import { useEffect } from "react";
 
@@ -39,7 +40,8 @@ function App() {
         <Route path="/day3" element={<BlogDay3 />} />
         <Route path="/day4" element={<BlogDay4 />} />
         <Route path="/day5" element={<BlogDay5 />} />
-        <Route path="/day6-7" element={<BlogDay6_7 />} />
+        <Route path="/day6" element={<BlogDay6 />} />
+        <Route path="/day7" element={<BlogDay7 />} />
       </Routes>
       <Footer />
     </Router>
