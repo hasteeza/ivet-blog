@@ -66,7 +66,7 @@ const Hero = () => {
         style={{ height: "100vh" }} // Full height scroll
       >
         <div
-          className="space-y-[150rem]"
+          className="space-y-[150rem] max-md:space-y-[85rem]"
           style={{
             animation: "scrollVerticalInfinite 90s linear infinite",
           }}
